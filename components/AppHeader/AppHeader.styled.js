@@ -1,29 +1,22 @@
-import { Button } from "@mui/material";
 import styled from "styled-components";
 
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background: #191B1D;
   position: fixed;
   width: 100%;
   z-index: 99;
   height: 70px;
-  @media screen and (min-width: 52em) {
-    display: none;
-  }
-  @media screen and (max-width: 52em) {
-    padding: 0 22px;
-
-    /* border: 1px solid red; */
-  }
+  padding: 0 4rem;
+  color: #ffffff;
+  @media screen and (min-width: 52em) {}
+  @media screen and (max-width: 52em) {}
 `;
 const HamburgerContainer = styled.div`
   display: flex;
   cursor: pointer;
-
-  /* border: 1px solid red; */
 `;
 const WebNavBarContainer = styled.div`
   display: flex;
@@ -48,37 +41,15 @@ const MainLinkContainer = styled.div`
 const NavLink = styled.div`
   display: flex;
   cursor: pointer;
-  /* color: #262c55; */
-  color: ${({ active }) => (active ? "#AB3356" : "")};
+  color: #ffffff;
 `;
 const NavBox = styled.div`
   display: flex;
   gap: 22px;
-`;
-const NavBtnLogin = styled(Button)`
-  && {
-    padding: 0.5rem 30px;
-    font-weight: 500;
-    font-size: 0.875rem;
-    text-transform: none;
-
-    background: rgba(171, 51, 86, 0.04);
-    border: 0.5px solid rgba(171, 51, 86, 0.4);
-    border-radius: 6px;
-    color: #ab3356;
-  }
-`;
-const NavBtnApply = styled(Button)`
-  && {
-    display: flex;
-    background: #ab3356 !important;
-    border-radius: 6px;
-    padding: 0.5rem 30px;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 0.875rem;
-    text-transform: none;
-  }
+  background: #5A80B7;
+  color: #ffffff;
+  padding: .5rem 2rem;
+  border-radius: 5px;
 `;
 export {
   NavBarContainer,
@@ -87,6 +58,4 @@ export {
   MainLinkContainer,
   NavLink,
   NavBox,
-  NavBtnApply,
-  NavBtnLogin,
 };
