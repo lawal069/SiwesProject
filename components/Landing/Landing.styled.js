@@ -13,7 +13,7 @@ const LandingMainBox = styled.div`
   flex-direction: column;
   padding: 70px;
   width: 100%;
-  background: #A369DE;
+  background: #ffffff;
 
   @media screen and (max-width: 52em) {
     margin: 75px 0 0 0;
@@ -39,10 +39,58 @@ const MainStory = styled.div`
     padding: 2rem;
     line-height: 26px;
     box-shadow: 0px 0px 40px 2px rgba(38, 44, 85, 0.12);
+`;
+
+const SecondContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  background: #A369DE;
+  padding: 4rem;
+`;
+
+const WhatWeDoContainer = styled.div``;
+
+const RequirementContainer = styled.div``;
+
+const ContentCont = styled.div``;
+
+const ContentInfo = styled.div``;
+
+const RequirementDetails = styled.div``;
+
+const DetailsSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  color: #A369DE;
+  padding: 0 20px;
+  width: 500px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+`;
+
+const DetailsOutput = styled.div`
+  background: red;
+  font-size: 16px;
+  padding: 0 20px;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 `
+
 export {
     LandingContainer,
     LandingMainBox,
     LandingMainContent,
     MainStory,
+    SecondContainer,
+    WhatWeDoContainer,
+    RequirementContainer,
+    ContentCont,
+    ContentInfo,
+    RequirementDetails,
+    DetailsSection,
+    DetailsOutput,
 }
