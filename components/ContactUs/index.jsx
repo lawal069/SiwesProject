@@ -8,9 +8,13 @@ const ContactUs = () => {
     <ContactUsContainer>
     <div>
       <h3>Contact us</h3>
+      <label>Name: </label>
       <input type="text" placeholder="Name" />
+      <label>Email: </label>
       <input type="email" placeholder="Email" />
+      <label>Subject: </label>
       <input type="text" placeholder="Subject" />
+      <label>Write your message: </label>
       <textarea
         name=""
         id=""

@@ -46,38 +46,68 @@ const SecondContainer = styled.div`
   justify-content: space-between;
   background: #A369DE;
   padding: 4rem;
+
+  @media screen and (max-width: 52em){
+    width: 100%;
+    padding: 0 22px;
+  }
 `;
 
 const WhatWeDoContainer = styled.div``;
 
-const RequirementContainer = styled.div``;
+const RequirementContainer = styled.div`
+  > p {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+`;
 
 const ContentCont = styled.div``;
 
 const ContentInfo = styled.div``;
 
-const RequirementDetails = styled.div``;
+const RequirementDetails = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3);
+
+  @media screen and (max-width: 52em){
+    width: 350px;
+  }
+`;
 
 const DetailsSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
-  color: #A369DE;
+  color: #5A80B7;
+  font-weight: 700;
   padding: 0 20px;
   width: 500px;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 52em){
+    width: auto;
+  }
 `;
 
 const DetailsOutput = styled.div`
-  background: red;
+  background: #5A80B7;
+  color: #fff;
   font-size: 16px;
-  padding: 0 20px;
+  padding: 20px;
   margin-top: -1rem;
   margin-bottom: 1rem;
+  max-width: 500px;
+  border-radius: 5px;
+
+  @media screen and (max-width: 52em){
+    width: auto;
+  }
 `
 
 export {

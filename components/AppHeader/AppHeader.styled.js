@@ -11,8 +11,13 @@ const NavBarContainer = styled.div`
   height: 70px;
   padding: 0 4rem;
   color: #ffffff;
-  @media screen and (min-width: 52em) {}
-  @media screen and (max-width: 52em) {}
+  @media screen and (min-width: 52em) {
+    display: none;
+  }
+  @media screen and (max-width: 52em) {
+    padding: 0 22px;
+    width: 100%;
+  }
 `;
 const HamburgerContainer = styled.div`
   display: flex;
@@ -23,9 +28,10 @@ const WebNavBarContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  padding: 19px 60px;
+  height: 70px;
+  padding: 0 4rem;
   align-items: center;
-  background: #ffffff;
+  background: #191B1D;
   z-index: 99;
   @media screen and (max-width: 52em) {
     display: none;
@@ -36,7 +42,7 @@ const MainLinkContainer = styled.div`
   margin-left: auto;
   align-items: center;
   gap: 50px;
-  color: #262c55;
+  color: #5A80B7;
 `;
 const NavLink = styled.div`
   display: flex;

@@ -21,21 +21,25 @@ import {
 } from "./Landing.styled";
 
 const Landing = () => {
-
   const data = [
     {
       title: "O'Level Classes",
-      requirement: "Passport"
+      requirement: "Passport Photograph | Five (5) O'Level Past Questions | Parents/Guardian Phone Number | Home Address | Writing Materials",
     },
     {
       title: "UTME Classes",
-      requirement: "Passport"
+      requirement:
+        "Passport Photograph | Four (4) UTME Past questions | Parents/Guardian Phone Number | Home Address | Writing Materials",
     },
     {
       title: "Post UTME Classes",
-      requirement: "Passport"
+      requirement: "Passport Photograph | UTME score | Parents/Guardian Phone Number | Home Address | Writing Materials",
     },
-  ]
+    {
+      title: "IT/SIWES Placement",
+      requirement: "Passport Photograph | SIWES/IT Letter | Parents/Guardian Phone Number | Home Address | Laptop "
+    },
+  ];
 
   return (
     <LandingContainer>
@@ -51,15 +55,17 @@ const Landing = () => {
         </LandingMainContent>
       </LandingMainBox>
       <SecondContainer>
-        <WhatWeDoContainer>
-          <p>What we do</p>
-          <ContentCont></ContentCont>
-        </WhatWeDoContainer>
         <RequirementContainer>
           <p>Admission Requirement</p>
           <RequirementDetails>
             {data.map((data, index) => {
-              return <ReqContent key={index} title={data.title} requirement={data.requirement} />;
+              return (
+                <ReqContent
+                  key={index}
+                  title={data.title}
+                  requirement={data.requirement}
+                />
+              );
             })}
           </RequirementDetails>
         </RequirementContainer>

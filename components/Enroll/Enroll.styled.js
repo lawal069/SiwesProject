@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import styled from "styled-components";
 
-const ContactUsContainer = styled.div`
+const EnrollContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,19 +18,20 @@ const ContactUsContainer = styled.div`
       display: none;
     }
   }
-  
-  > div {
-    display: flex;
+`;
+
+const EnrollBody = styled.div`
+  display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #ffffff;
     @media screen and (max-width: 52em) {
       width: 100%;
       padding: 0 20px;
     }
     > h3 {
       font-weight: 700;
-      font-size: 30px;
-      margin-bottom: 30px;
+      font-size: 40px;
+      margin-bottom: 0;
       @media screen and (max-width: 52em) {
         font-size: 24px;
       }
@@ -43,35 +44,41 @@ const ContactUsContainer = styled.div`
         font-size: 16px;
       }
     }
-    > input {
-      width: 600px;
-      outline: none;
-      padding: 16px;
-      border-radius: 8px;
-      border: 2px solid #fff;
-      margin-bottom: 33px;
-      background: transparent;
-      color: #fff;
-      @media screen and (max-width: 52em) {
-        width: 100%;
-      }
-    }
+    
     > textarea {
       outline: none;
       border-radius: 8px;
       padding: 16px;
       border: 2px solid #A369DE;
-      background: transparent;
-      border: 2px solid #fff;
     }
-  }
 `;
+
+const InputCont = styled.div`
+  display: flex;
+  gap: 30px;
+  @media screen and (max-width: 52em){
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  > input {
+      width: 350px;
+      outline: none;
+      padding: 16px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 20px;
+      @media screen and (max-width: 52em) {
+        width: 100%;
+      }
+    }
+`
 const MsgBtn = styled(Button)`
   && {
     margin: 33px 0;
     text-transform: none;
     color: #fff;
-    background: #5A80B7 !important;
+    background: #A369DE !important;
     border-radius: 8px;
     padding: 16px 0;
     font-size: 20px;
@@ -79,6 +86,8 @@ const MsgBtn = styled(Button)`
 `;
 
 export {
-    ContactUsContainer,
+  EnrollContainer,
+  EnrollBody,
+  InputCont,
     MsgBtn,
 }

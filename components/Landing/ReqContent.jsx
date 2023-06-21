@@ -16,7 +16,7 @@ const ReqContent = (props) => {
     <>
       <DetailsSection onClick={toggleDetails}>
         <p>{props.title}</p>
-        {show ? <ExpandMoreRoundedIcon /> : <ExpandLessRoundedIcon />}
+        {show ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
       </DetailsSection>
       {show && <DetailsOutput>{props.requirement}</DetailsOutput>}
     </>
