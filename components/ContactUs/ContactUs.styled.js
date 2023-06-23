@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const ContactUsContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -19,7 +20,7 @@ const ContactUsContainer = styled.div`
     }
   }
   
-  > div {
+  > form {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -29,7 +30,8 @@ const ContactUsContainer = styled.div`
     }
     > h3 {
       font-weight: 700;
-      font-size: 30px;
+      text-transform: uppercase;
+      font-size: 40px;
       margin-bottom: 30px;
       @media screen and (max-width: 52em) {
         font-size: 24px;
@@ -50,8 +52,8 @@ const ContactUsContainer = styled.div`
       border-radius: 8px;
       border: 2px solid #fff;
       margin-bottom: 33px;
-      background: transparent;
-      color: #fff;
+      background: #fff;
+      color: #000;
       @media screen and (max-width: 52em) {
         width: 100%;
       }
@@ -61,7 +63,7 @@ const ContactUsContainer = styled.div`
       border-radius: 8px;
       padding: 16px;
       border: 2px solid #A369DE;
-      background: transparent;
+      background: #fff;
       border: 2px solid #fff;
     }
   }
