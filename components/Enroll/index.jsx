@@ -40,7 +40,21 @@ const Enroll = () => {
         relationship: inputRelationship,
         pAddress: inputPAddress,
       })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        setInputFirstName('');
+        setInputLastName('');
+        setInputDepartment('');
+        setInputPhoneNumber('');
+        setInputGender('');
+        setInputEmail('');
+        setInputAddress('');
+        setInputPName('');
+        setInputPNumber('');
+        setInputOccupation('');
+        setInputRelationship('');
+        setInputPAddress('');
+      })
       .catch((err) => console.log(err));
   };
 
