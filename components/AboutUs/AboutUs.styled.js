@@ -55,7 +55,7 @@ const DepartmentContainer = styled.div`
   font-size: 18px;
   > h3{
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     text-transform: uppercase;
   }
 
@@ -65,7 +65,9 @@ const DepartmentContainer = styled.div`
 `;
 const SectionBody= styled.div`
   width: 100%;
-  gap: 100px;
+  /* display: flex;
+  justify-content: space-between;
+  gap: 50px; */
   /* color: #5A80B7; #A369DE; #191B1D; */
   color: #191B1D;
   > section{
@@ -74,6 +76,24 @@ const SectionBody= styled.div`
     padding: 10px;
     box-shadow: 0px 0px 40px 2px rgba(38, 44, 85, 0.12);
     margin-bottom: 20px;
+    color: #5A80B7;
+
+    > h3 {
+      color: #A369DE;
+      font-size: 24px;
+      text-transform: uppercase;
+      border-left: 5px solid #5A80B7;
+      padding-left: 20px;
+    }
+
+    > strong, li {
+      color: #A369DE;
+    }
+    
+    > p{
+      color: #5A80B7;
+      padding-left: 20px;
+    }
 
     @media screen and (max-width: 52em) {
       width: 100%;

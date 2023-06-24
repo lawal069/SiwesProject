@@ -47,7 +47,7 @@ const MainLinkContainer = styled.div`
 const NavLink = styled.div`
   display: flex;
   cursor: pointer;
-  color: #ffffff;
+  color: ${props => props.active ? '#5A80B7' : '#fff'}
 `;
 const NavBox = styled.div`
   display: flex;

@@ -5,11 +5,13 @@ const ContactUsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: #fff;
   margin-top: 70px;
   background: #A369DE;
-  gap: 150px;
+  > h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
   > img {
     margin-top: auto;
     margin-left: -90px;

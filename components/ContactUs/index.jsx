@@ -27,7 +27,7 @@ const ContactUs = () => {
 
   return (
     <ContactUsContainer>
-      {/* <h3>Contact us</h3> */}
+    <h3>Contact us</h3>
     <form>
       <label>Name: </label>
       <input type="text" placeholder="Name" value={inputName} onChange={(e) => setInputName(e.target.value)} />

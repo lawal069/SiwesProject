@@ -10,24 +10,39 @@ const LandingContainer = styled.div`
 `;
 const LandingMainBox = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 70px;
   width: 100%;
-  background: #ffffff;
+  background: #A369DE;
+  color: #fff;
+  gap: 50px;
 
   @media screen and (max-width: 52em) {
-    margin: 75px 0 0 0;
+    /* margin: 75px 0 0 0; */
     flex-direction: column;
-    padding: 0 16px 90px;
+    padding: 0 16px 50px;
+    > img{
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 const LandingMainContent = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
+
+  > div {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+  }
   
   @media screen and (max-width: 52em) {
     padding: 52px 14px 32px;
+    > div {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -52,14 +67,57 @@ const SecondContainer = styled.div`
     padding: 0 22px;
   }
 `;
+const WhatWeDoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 4rem;
 
-const WhatWeDoContainer = styled.div``;
+  > h3 {
+    font-size: 30px;
+    color: #5A80B7;
+    padding-left: 10px;
+    border-left: 5px solid #A369DE;
+  }
 
+  @media screen and (max-width: 52em){
+    padding: 0 16px;
+  }
+
+`;
+const ListContainer = styled.div`
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  > div{
+    >h3{
+      color: #A369DE;
+    }
+    > p{
+      color: #5A80B7;
+      text-align: justify;
+    }
+  }
+  
+  @media screen and (max-width: 52em){
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 0;
+    > img{
+      width: 100%;
+      height: auto;
+    }
+  }
+`
 const RequirementContainer = styled.div`
   > p {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 5px solid #191b1d;
+    color: #fff;
   }
 `;
 
@@ -80,8 +138,8 @@ const DetailsSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
-  color: #5A80B7;
+  background: #5A80B7;
+  color: #fff;
   font-weight: 700;
   padding: 0 20px;
   width: 500px;
@@ -96,8 +154,8 @@ const DetailsSection = styled.div`
 `;
 
 const DetailsOutput = styled.div`
-  background: #5A80B7;
-  color: #fff;
+  background: #fff;
+  color: #5A80B7;
   font-size: 16px;
   padding: 20px;
   margin-top: -1rem;
@@ -109,9 +167,18 @@ const DetailsOutput = styled.div`
     width: auto;
   }
 `
+const NavBox = styled.div`
+  background: #5A80B7;
+  color: #ffffff;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+`;
 
 export {
     LandingContainer,
+    NavBox,
     LandingMainBox,
     LandingMainContent,
     MainStory,
@@ -123,4 +190,5 @@ export {
     RequirementDetails,
     DetailsSection,
     DetailsOutput,
+    ListContainer,
 }
