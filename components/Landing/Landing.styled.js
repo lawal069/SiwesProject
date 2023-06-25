@@ -37,6 +37,10 @@ const LandingMainContent = styled.div`
     font-weight: 700;
     text-align: center;
   }
+  > p {
+    font-size: 20px;
+    text-align: justify;
+  }
   
   @media screen and (max-width: 52em) {
     padding: 52px 14px 32px;
